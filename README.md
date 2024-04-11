@@ -1,4 +1,5 @@
 # GitHub Workflow Dev Tools
+More instruction: [GitHub Workflow(Actions)开发环境](https://zhuanlan.zhihu.com/p/691842634)  
 Note: For AWS related content, assume you have already setup AWS credentials locally.
 
 ## Run local workflow using [act](https://github.com/nektos/act)
