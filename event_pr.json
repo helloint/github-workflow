@@ -1,0 +1,11 @@
+{
+	"pull_request": {
+		"merged": true,
+		"head": {
+			"ref": "master"
+		},
+		"base": {
+			"ref": "master"
+		}
+	}
+}

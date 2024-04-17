@@ -1,16 +1,16 @@
-name: Dispatch Deploy
+name: test
+
 on:
-    workflow_call:
+    workflow_dispatch:
         inputs:
             name:
-                description: Name
+                description: "name"
                 required: true
-                type: string
+                default: "world"
 
 jobs:
     show_inputs:
         runs-on: ubuntu-latest
         steps:
-            -   run: |
-                    echo "Hello ${{ github.event.inputs.name }}!"
-
+            - run: |
+                  echo "Hello ${{ github.event.inputs.name }}!"

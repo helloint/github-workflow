@@ -1,0 +1,16 @@
+name: Auto Release
+on:
+    pull_request:
+        branches:
+            - master
+        types: [closed]
+
+jobs:
+    test:
+        runs-on: ubuntu-latest
+        if: github.event.pull_request.merged == true
+        steps:
+            - name: Checkout
+              uses: actions/checkout@v4
+
+            - run: node scripts/test.js
