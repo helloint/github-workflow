@@ -44,6 +44,12 @@ Then try:
 act -P ubuntu-latest=ubuntu-aws --pull=false -W ./.github/workflows/test-aws-s3.yml
 ```
 
+### Install private npm packages
+`act` accept `.env` file to get environment variables. So you can create one like `.env.local` and fill in your NPM token.
+```.env.local
+NPM_TOKEN=your-npm-token
+```
+
 ## Trigger workflow using [GitHub CLI](https://cli.github.com/)
 ### Init
 ```
