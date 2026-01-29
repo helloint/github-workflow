@@ -9,6 +9,8 @@ brew install act colima docker
 colima start
 ```
 
+Note: If you have issue installing docker, try `brew install --formula docker`. See [more](https://github.com/Homebrew/brew/issues/20516#issuecomment-3817006036).
+
 ### Sample commands
 ```shell
 # act [Document]((https://nektosact.com/usage/index.html#events)) says the default event is `push`, but if there is only one event in workflow, act can still detect and trigger.
